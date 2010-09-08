@@ -1,4 +1,4 @@
-require 'yogo/support/proc/compose'
+
 module Yogo
   module ExtensionModule
     def extended(base)
