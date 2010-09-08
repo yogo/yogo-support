@@ -16,7 +16,7 @@ begin
     gem.summary = "Supporting extensions for yogo libraries."
     gem.description = "Supporting extensions for yogo libraries."
     gem.email = "rheimbuch@gmail.com"
-    gem.homepage = "http://github.com/rheimbuch/yogo-support"
+    gem.homepage = "http://github.com/yogo/yogo-support"
     gem.authors = ["Ryan Heimbuch"]
     gem.add_bundler_dependencies
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
