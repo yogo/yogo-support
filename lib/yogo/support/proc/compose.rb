@@ -3,7 +3,6 @@ module Yogo
     module Proc
       module Compose
         def compose(g)
-          raise ArgumentError, "arity count mismatch" unless arity == g.arity
           lambda{|*args| self[*g[*args]] }
         end
   
