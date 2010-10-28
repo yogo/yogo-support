@@ -14,28 +14,28 @@ Gem::Specification.new do |s|
   s.email = %q{rheimbuch@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+    "README.rdoc"
   ]
   s.files = [
     ".gitignore",
-     "Gemfile",
-     "Gemfile.lock",
-     "LICENSE",
-     "README.rdoc",
-     "Rakefile",
-     "VERSION",
-     "features/step_definitions/yogo-support_steps.rb",
-     "features/support/env.rb",
-     "features/yogo-support.feature",
-     "lib/yogo/support/extension_module.rb",
-     "lib/yogo/support/object/apply.rb",
-     "lib/yogo/support/proc.rb",
-     "lib/yogo/support/proc/call.rb",
-     "lib/yogo/support/proc/compose.rb",
-     "lib/yogo/support/proc/partial.rb",
-     "spec/extension_module_spec.rb",
-     "spec/spec.opts",
-     "spec/spec_helper.rb"
+    "Gemfile",
+    "Gemfile.lock",
+    "LICENSE",
+    "README.rdoc",
+    "Rakefile",
+    "VERSION",
+    "features/step_definitions/yogo-support_steps.rb",
+    "features/support/env.rb",
+    "features/yogo-support.feature",
+    "lib/yogo/support/extension_module.rb",
+    "lib/yogo/support/object/apply.rb",
+    "lib/yogo/support/proc.rb",
+    "lib/yogo/support/proc/call.rb",
+    "lib/yogo/support/proc/compose.rb",
+    "lib/yogo/support/proc/partial.rb",
+    "spec/extension_module_spec.rb",
+    "spec/spec.opts",
+    "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/yogo/yogo-support}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -44,38 +44,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Supporting extensions for yogo libraries.}
   s.test_files = [
     "spec/extension_module_spec.rb",
-     "spec/spec_helper.rb"
+    "spec/spec_helper.rb"
   ]
-
-  if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rake>, [">= 0"])
-      s.add_development_dependency(%q<jeweler>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<cucumber>, [">= 0"])
-      s.add_development_dependency(%q<yard>, [">= 0"])
-      s.add_development_dependency(%q<ruby-debug>, [">= 0"])
-      s.add_development_dependency(%q<ruby-debug19>, [">= 0"])
-    else
-      s.add_dependency(%q<rake>, [">= 0"])
-      s.add_dependency(%q<jeweler>, [">= 0"])
-      s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<cucumber>, [">= 0"])
-      s.add_dependency(%q<yard>, [">= 0"])
-      s.add_dependency(%q<ruby-debug>, [">= 0"])
-      s.add_dependency(%q<ruby-debug19>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<rake>, [">= 0"])
-    s.add_dependency(%q<jeweler>, [">= 0"])
-    s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<cucumber>, [">= 0"])
-    s.add_dependency(%q<yard>, [">= 0"])
-    s.add_dependency(%q<ruby-debug>, [">= 0"])
-    s.add_dependency(%q<ruby-debug19>, [">= 0"])
-  end
 end
 
