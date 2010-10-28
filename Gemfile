@@ -16,16 +16,14 @@ group :development, :test do
   end
 end
 
-group :development do
+group :development, :test do
   gem "racksh"
   gem "sinatra-reloader"
   gem "rake"
   gem "jeweler"
   gem "yard"
   gem "yardstick"
-end
-
-group :test do
+  # Testing gems
   gem "rspec"
   gem "rack-test"
   gem "cucumber"

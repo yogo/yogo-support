@@ -46,5 +46,16 @@ Gem::Specification.new do |s|
     "spec/extension_module_spec.rb",
     "spec/spec_helper.rb"
   ]
+  if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
+    s.specification_version = 3
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      #
+    else
+      #
+    end
+  else
+    #
+  end
 end
 
