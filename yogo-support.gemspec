@@ -34,7 +34,6 @@ Gem::Specification.new do |s|
     "lib/yogo/support/proc/compose.rb",
     "lib/yogo/support/proc/partial.rb",
     "spec/extension_module_spec.rb",
-    "spec/spec.opts",
     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/yogo/yogo-support}
@@ -42,6 +41,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Supporting extensions for yogo libraries.}
+  s.description = %q{Supporting code for the Yogo Data Management Framework components.}
   s.test_files = [
     "spec/extension_module_spec.rb",
     "spec/spec_helper.rb"
