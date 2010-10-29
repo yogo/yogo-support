@@ -1,14 +1,12 @@
 PATH
   remote: .
   specs:
-    yogo-support (0.1.1)
+    yogo-support (0.2.0)
 
 GEM
   remote: http://rubygems.org/
   specs:
     archive-tar-minitar (0.5.2)
-    autotest (4.4.1)
-    backports (1.18.2)
     builder (2.1.2)
     columnize (0.3.1)
     cucumber (0.9.3)
@@ -18,7 +16,6 @@ GEM
       json (~> 1.4.6)
       term-ansicolor (~> 1.0.5)
     diff-lcs (1.1.2)
-    factory_girl (1.3.2)
     gemcutter (0.6.1)
     gherkin (2.2.9)
       json (~> 1.4.6)
@@ -33,8 +30,6 @@ GEM
     linecache (0.43)
     linecache19 (0.5.11)
       ruby_core_source (>= 0.1.4)
-    monkey-lib (0.5.4)
-      backports
     rack (1.2.1)
     rack-debug (1.4.2)
       rack (>= 1.0)
@@ -44,9 +39,6 @@ GEM
       ruby-debug19 (>= 0.11.6)
     rack-test (0.5.6)
       rack (>= 1.0)
-    racksh (0.9.8)
-      rack (>= 1.0)
-      rack-test (>= 0.5)
     rake (0.8.7)
     rspec (2.0.1)
       rspec-core (~> 2.0.1)
@@ -75,21 +67,7 @@ GEM
       archive-tar-minitar (>= 0.5.2)
     rubyforge (2.0.4)
       json_pure (>= 1.1.7)
-    sinatra (1.1.0)
-      rack (~> 1.1)
-      tilt (~> 1.1)
-    sinatra-advanced-routes (0.5.1)
-      monkey-lib (~> 0.5.0)
-      sinatra (~> 1.0)
-      sinatra-sugar (~> 0.5.0)
-    sinatra-reloader (0.5.0)
-      sinatra (~> 1.0)
-      sinatra-advanced-routes (~> 0.5.0)
-    sinatra-sugar (0.5.0)
-      monkey-lib (~> 0.5.0)
-      sinatra (~> 1.0)
     term-ansicolor (1.0.5)
-    tilt (1.1)
     yard (0.6.1)
     yardstick (0.1.0)
       yard (~> 0.2)
@@ -98,19 +76,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  autotest
   cucumber
-  factory_girl
   jeweler
   rack-debug
   rack-debug19
   rack-test
-  racksh
   rake
   rspec
   ruby-debug
   ruby-debug19
-  sinatra-reloader
   yard
   yardstick
   yogo-support!
