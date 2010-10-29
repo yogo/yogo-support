@@ -1,26 +1,18 @@
-require 'rake'
 begin
-  require 'bundler/setup'
-  Bundler.require(:default)
-  Bundler::GemHelper.install_tasks
+  require 'bundler'
+  Bundler.setup
 rescue LoadError
   puts "Bundler is not intalled. Install with: gem install bundler"
 end
 
-if RUBY_VERSION[0..2] == "1.9"
-  Bundler::GemHelper.class_eval do
-    def sh_with_code(cmd, &block)
-      outbuf, errbuf = '', ''
-      pid = nil
-      Dir.chdir(base) {
-        stdin, stdout, stderr, waitth = *Open3.popen3(cmd)
-        pid = waitth.value
-        outbuf, errbuf = stdout.read, stderr.read
-        block.call(outbuf, errbuf) if block
-      }
-      [outbuf, errbuf, pid]
-    end
-  end
+require 'jeweler'
+Jeweler::Tasks.new do |gem|
+  gem.name = %q{yogo-support}
+  gem.summary = %Q{Yogo Support module.}
+  gem.description = %q{Supporting code for the Yogo Data Management Framework components.}
+  gem.authors = ["Ryan Heimbuch"]
+  gem.homepage = "http://github.com/yogo/yogo-support"
+  gem.email = %q{rheimbuch@gmail.com}
 end
 
 begin
